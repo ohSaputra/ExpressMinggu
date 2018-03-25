@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add express
+
+PATH: 
+  /Users/ohendra/.rbenv/shims:/Users/ohendra/.rbenv/bin:/Users/ohendra/.rbenv/bin:/usr/local/opt/openssl/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ohendra/.rbenv/shims:/Users/ohendra/.rbenv/bin:/usr/local/opt/openssl/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.9.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "ExpressMinggu",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.60.173:443 - Local (0.0.0.0:54017)
+      at Object._errnoException (util.js:1024:11)
+      at _exceptionWithHostPort (util.js:1046:20)
+      at internalConnect (net.js:971:16)
+      at emitLookup (net.js:1106:7)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:94209:28
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:94118:13
+      at RawTask.module.exports.RawTask.call (/usr/local/lib/node_modules/yarn/lib/cli.js:78685:19)
+      at flush (/usr/local/lib/node_modules/yarn/lib/cli.js:78767:29)
+      at _combinedTickCallback (internal/process/next_tick.js:131:7)
+      at process._tickCallback (internal/process/next_tick.js:180:9)

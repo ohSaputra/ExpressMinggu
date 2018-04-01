@@ -6,7 +6,7 @@ const app = express()
 
 // fungsi helloWorld
 const helloWorld = (request, respond) =>
-respond.send('Hello World!')
+  respond.send('Hello World!')
 
 // fungsi user get name dan address
 const userFunction = (req, res) => {

@@ -1,4 +1,4 @@
-> How to connect MongoDB into your express server:
+## How to connect MongoDB into your express server:
 
 1. First, install [Mongoose](https://github.com/Automattic/mongoose/) using NPM:
 ```

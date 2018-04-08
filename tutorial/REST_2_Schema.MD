@@ -40,9 +40,15 @@ const employeeSchema = new mongoose.Schema({
   hire_date: Date,
 })
 ```
-4. Last register the schema into mongoose:
+4. Register the schema into mongoose:
 ```js
 // employee.model.js
 // register the schema
 mongoose.model('Employee', employeeSchema, 'employee')
+```
+5. Last import your schema to `db.js`
+```js
+// db.js
+// BRING YOUR SCHEMA & MODEL
+require('../app/model/employee.model')
 ```

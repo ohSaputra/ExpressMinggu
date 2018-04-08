@@ -32,3 +32,6 @@ process.on('SIGINT', () =>
   gracefullShutdown('APP Termination (SIGINT)', () =>
     process.exit(0) )
 )
+
+// BRING YOUR SCHEMA & MODEL
+require('../app/model/employee.model')

@@ -6,6 +6,7 @@ const router = express.Router()
 
 // import controller to route
 const userCtrl = require('../app/controller/user.controller')
+const employeeCtrl = require('../app/controller/employee.controller')
 
 // get root request
 router
@@ -18,7 +19,7 @@ router
 
 router
   .route('/employee')
-  .get(userCtrl.getEmployee)
+  .get(employeeCtrl.getEmployee)
   .post(userCtrl.addOneEmployee)
 
 module.exports = router

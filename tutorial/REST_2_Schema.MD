@@ -7,6 +7,7 @@
   * gender
   * birth_date
   * hire_date
+
   SO my schema will be named as `employee.model.js` and the schema will look like:
   ```js
 // calling mongoose library

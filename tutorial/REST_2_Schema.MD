@@ -8,8 +8,9 @@
   * birth_date
   * hire_date
 
-  SO my schema will be named as `employee.model.js` and the schema will look like:
-  ```js
+SO my schema will be named as `employee.model.js` and the schema will look like:
+```js
+// employee.model.js
 // calling mongoose library
 const mongoose = require('mongoose')
 
@@ -23,6 +24,8 @@ const employeeSchema = new mongoose.Schema({
   ```
 3. If you need to make a field to be required you can pass a required parameter like this:
 ```js
+// employee.model.js
+// define the table structure
 const employeeSchema = new mongoose.Schema({
   first_name: {
     type: String,
@@ -37,8 +40,9 @@ const employeeSchema = new mongoose.Schema({
   hire_date: Date,
 })
 ```
-4. Last register the schema to mongoose:
+4. Last register the schema into mongoose:
 ```js
+// employee.model.js
 // register the schema
 mongoose.model('Employee', employeeSchema, 'employee')
 ```

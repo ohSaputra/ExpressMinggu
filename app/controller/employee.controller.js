@@ -33,7 +33,39 @@ const getEmployee = (req, res) =>
       }
     })
 
+// insert one employee
+const addOneEmployee = (req, res) => {
+  const { first_name, last_name, birth_date, hire_date } = req.body
+
+  return Employee
+    .create({
+      first_name,
+      last_name,
+      gender,
+      birth_date,
+      hire_date
+    })
+    .exec((err, result) => {
+      // if found error
+      if (err) {
+        console.error(err)
+        res
+          .status(500)
+          .json({ message: `Error creating new employee` })
+
+        // if succeed
+      } else {
+        console.log(`New employee created.`)
+
+        res
+          .status(204)
+          .json(result)
+      }
+    })
+}
+
 // Exports your function
 module.exports = {
-  getEmployee
+  getEmployee,
+  addOneEmployee,
 }

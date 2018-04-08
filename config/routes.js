@@ -20,6 +20,6 @@ router
 router
   .route('/employee')
   .get(employeeCtrl.getEmployee)
-  .post(userCtrl.addOneEmployee)
+  .post(employeeCtrl.addOneEmployee)
 
 module.exports = router

@@ -81,7 +81,7 @@ const getEmployee = (req, res) =>
       }
     })
 ```
-7. Last exports your function:
+7. Last exports your function, and use it in `routes.js`:
 ```js
 // employee.controller.js
 module.exports = {

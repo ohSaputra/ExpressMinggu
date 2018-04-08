@@ -1,3 +1,6 @@
+// CALL THE DATABASE
+require('./config/db')
+
 // calling library
 const express = require('express')
 const path = require('path')

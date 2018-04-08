@@ -55,3 +55,17 @@ process.on('SIGINT', () =>
 )
 ```
 8. And import/require `db.js` at the top of `server.js`
+```js
+// server.js: put this in the first line
+// CALL THE DATABASE
+require('./config/db')
+
+```
+9. Start your express server:
+```
+npm start
+```
+or
+```
+node server.js
+```

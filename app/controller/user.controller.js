@@ -35,8 +35,7 @@ const addOneEmployee = (req, res) => {
   return res
     .status(200)
     .json({
-      name,
-      address,
+      ...req.body
     })
 }
 

@@ -22,4 +22,8 @@ router
   .get(employeeCtrl.getEmployee)
   .post(employeeCtrl.addOneEmployee)
 
+router
+  .route('/employee/:id')
+  .patch(employeeCtrl.updateOneEmployee)
+
 module.exports = router

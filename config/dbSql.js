@@ -22,6 +22,7 @@ sequelize
 const db = {
   // Import your schema here
   Employees: sequelize.import(path.join(__dirname, '../app/model/myEmployee.model')),
+  User: sequelize.import(path.join(__dirname, '../app/model/myUser.model')),
 
   sequelize,
   Sequelize,

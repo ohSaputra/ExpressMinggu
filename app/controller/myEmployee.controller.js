@@ -1,7 +1,8 @@
 const db = require('../../config/dbSql')
+const { Employees } = db
 
 const getEmployee = (req, res) => {
-  return db.Employees
+  return Employees
     .findAll({
       limit: 10
     })
@@ -16,6 +17,12 @@ const getEmployee = (req, res) => {
           .json({ message: `Could not find Employee` })
     })
 }
+
+// addOneEmployee
+
+// updateOneEmployee
+
+// deleteOneEmployee
 
 module.exports = {
   getEmployee

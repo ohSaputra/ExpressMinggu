@@ -1,4 +1,4 @@
-## Insert data in MongoDB using (Mongoose)[http://mongoosejs.com/]
+## Insert data in MongoDB using [Mongoose](http://mongoosejs.com/)
 
 1. In your controller file, make a method called `addOneSomething` and use `create` method from `mongoose`.
 ```js

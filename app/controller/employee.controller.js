@@ -110,6 +110,9 @@ const updateOneEmployee = (req, res) => {
     )
 }
 
+// delete
+// some method
+
 // Exports your function
 module.exports = {
   getEmployee,

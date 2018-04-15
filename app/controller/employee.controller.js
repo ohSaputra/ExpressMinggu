@@ -112,10 +112,33 @@ const updateOneEmployee = (req, res) => {
 
 // delete
 // some method
+const deleteOneEmployee = (req, res) => {
+  const { id } = req.params
+
+  return Employee
+    .findByIdAndRemove(id, (err, result) => {
+      // if found error
+      if (err) {
+        console.error(err)
+        res
+          .status(500)
+          .json({ message: `Error deleting employee with id: ${id}` })
+
+        // if succeed
+      } else {
+        console.log(`Deleted employee with id: ${id}`)
+
+        res
+          .status(204)
+          .json({})
+      }
+    })
+}
 
 // Exports your function
 module.exports = {
   getEmployee,
   addOneEmployee,
   updateOneEmployee,
+  deleteOneEmployee,
 }

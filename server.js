@@ -1,5 +1,5 @@
 // CALL THE DATABASE
-require('./config/db')
+// require('./config/db')
 
 // calling library
 const express = require('express')
@@ -13,7 +13,8 @@ const app = express()
 const defaultPort = 3000
 
 // import routes dari config/routes
-const router = require('./config/routes')
+// const router = require('./config/routes')
+const router = require('./config/routesSql')
 
 // set static frontend
 app.use(express.static(path.join(__dirname, 'public')))

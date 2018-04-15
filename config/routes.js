@@ -25,5 +25,6 @@ router
 router
   .route('/employee/:id')
   .patch(employeeCtrl.updateOneEmployee)
+  .delete(employeeCtrl.deleteOneEmployee)
 
 module.exports = router
